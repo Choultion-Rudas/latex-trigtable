@@ -1,0 +1,61 @@
+%% latex-trigtable.tex
+%% Copyright 2023 Choultion Rudas
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3c
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   https://www.latex-project.org/lppl.txt
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2008 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is Choultion Rudas.
+%
+% This work consists of the file latex-trigtable.tex
+% and the derived file latex-trigtable.pdf.
+
+\documentclass{article}
+\usepackage{amsmath, multirow, gensymb, array}
+\usepackage[a4paper, landscape]{geometry}
+\begin{document}
+\pagestyle{empty}
+\begin{table*}
+	\centering
+	\renewcommand\arraystretch{2.5}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\multirow{1}{*}{$\theta$}} & \multirow{2}{*}{$\sin\theta$}       & \multirow{2}{*}{$\cos\theta$}                     & \multirow{2}{*}{$\tan\theta$}                     & \multirow{2}{*}{$\cot\theta$}                                                 & \multirow{2}{*}{$\sec\theta$}                                             & \multirow{2}{*}{$\csc\theta$}                                                                                                                             \\
+		\cline{1-2}
+		\multirow{1}{*}{Degree}                         & \multirow{1}{*}{Radian}             &                                                   &                                                   &                                                                               &                                                                           &                                                                               &                                                                           \\
+		\hline
+		\multirow{1}{*}{$0\degree$}                     & \multirow{1}{*}{$0$}                & \multirow{1}{*}{$0$}                              & \multirow{1}{*}{$1$}                              & \multirow{1}{*}{$0$}                                                          & \multirow{1}{*}{$\displaystyle\lim_{\theta\to0^\pm}\cot\theta=\pm\infty$} & \multirow{1}{*}{$1$}                                                          & \multirow{1}{*}{$\displaystyle\lim_{\theta\to0^\pm}\csc\theta=\pm\infty$} \\
+		\hline
+		\multirow{1}{*}{$15\degree$}                    & \multirow{1}{*}{$\dfrac{\pi}{12}$}  & \multirow{1}{*}{$\dfrac{\sqrt{6}-\sqrt{2}}{4}$}   & \multirow{1}{*}{$\dfrac{\sqrt{6}+\sqrt{2}}{4}$}   & \multirow{1}{*}{$2-\sqrt{3}$}                                                 & \multirow{1}{*}{$2+\sqrt{3}$}                                             & \multirow{1}{*}{$\sqrt{6}-\sqrt{2}$}                                          & \multirow{1}{*}{$\sqrt{6}+\sqrt{2}$}                                      \\
+		\hline
+		\multirow{1}{*}{$18\degree$}                    & \multirow{1}{*}{$\dfrac{\pi}{10}$}  & \multirow{1}{*}{$\dfrac{\sqrt{5}-1}{4}$}          & \multirow{1}{*}{$\dfrac{\sqrt{10+2\sqrt{5}}}{4}$} & \multirow{1}{*}{$\dfrac{\sqrt{25-10\sqrt{5}}}{5}$}                            & \multirow{1}{*}{$\sqrt{5+2\sqrt{5}}$}                                     & \multirow{1}{*}{$\dfrac{\sqrt{10+2\sqrt{5}}}{5}$}                             & \multirow{1}{*}{$\sqrt{5}+1$}                                             \\
+		\hline
+		\multirow{1}{*}{$22.5\degree$}                  & \multirow{1}{*}{$\dfrac{\pi}{8}$}   & \multirow{1}{*}{$\dfrac{\sqrt{2-\sqrt{2}}}{2}$}   & \multirow{1}{*}{$\dfrac{\sqrt{2+\sqrt{2}}}{2}$}   & \multirow{1}{*}{$\sqrt{2}-1$}                                                 & \multirow{1}{*}{$\sqrt{2}+1$}                                             & \multirow{1}{*}{$\sqrt{4-2\sqrt{2}}$}                                         & \multirow{1}{*}{$\sqrt{4+2\sqrt{2}}$}                                     \\
+		\hline
+		\multirow{1}{*}{$30\degree$}                    & \multirow{1}{*}{$\dfrac{\pi}{6}$}   & \multirow{1}{*}{$\dfrac{1}{2}$}                   & \multirow{1}{*}{$\dfrac{\sqrt{3}}{2}$}            & \multirow{1}{*}{$\dfrac{\sqrt{3}}{3}$}                                        & \multirow{1}{*}{$\sqrt{3}$}                                               & \multirow{1}{*}{$\dfrac{2\sqrt{3}}{3}$}                                       & \multirow{1}{*}{$2$}                                                      \\
+		\hline
+		\multirow{1}{*}{$36\degree$}                    & \multirow{1}{*}{$\dfrac{\pi}{5}$}   & \multirow{1}{*}{$\dfrac{\sqrt{10-2\sqrt{5}}}{4}$} & \multirow{1}{*}{$\dfrac{\sqrt{5}+1}{4}$}          & \multirow{1}{*}{$\sqrt{5-2\sqrt{5}}$}                                         & \multirow{1}{*}{$\dfrac{\sqrt{25+10\sqrt{5}}}{5}$}                        & \multirow{1}{*}{$\sqrt{5}-1$}                                                 & \multirow{1}{*}{$\dfrac{\sqrt{10+2\sqrt{5}}}{5}$}                         \\
+		\hline
+		\multirow{1}{*}{$45\degree$}                    & \multirow{1}{*}{$\dfrac{\pi}{4}$}   & \multirow{1}{*}{$\dfrac{\sqrt{2}}{2}$}            & \multirow{1}{*}{$\dfrac{\sqrt{2}}{2}$}            & \multirow{1}{*}{$1$}                                                          & \multirow{1}{*}{$1$}                                                      & \multirow{1}{*}{$\sqrt{2}$}                                                   & \multirow{1}{*}{$\sqrt{2}$}                                               \\
+		\hline
+		\multirow{1}{*}{$54\degree$}                    & \multirow{1}{*}{$\dfrac{3\pi}{10}$} & \multirow{1}{*}{$\dfrac{\sqrt{5}+1}{4}$}          & \multirow{1}{*}{$\dfrac{\sqrt{10-2\sqrt{5}}}{4}$} & \multirow{1}{*}{$\dfrac{\sqrt{10+2\sqrt{5}}}{5}$}                             & \multirow{1}{*}{$\sqrt{5-2\sqrt{5}}$}                                     & \multirow{1}{*}{$\dfrac{\sqrt{10+2\sqrt{5}}}{5}$}                             & \multirow{1}{*}{$\sqrt{5}-1$}                                             \\
+		\hline
+		\multirow{1}{*}{$60\degree$}                    & \multirow{1}{*}{$\dfrac{\pi}{3}$}   & \multirow{1}{*}{$\dfrac{\sqrt{3}}{2}$}            & \multirow{1}{*}{$\dfrac{1}{2}$}                   & \multirow{1}{*}{$\sqrt{3}$}                                                   & \multirow{1}{*}{$\dfrac{\sqrt{3}}{3}$}                                    & \multirow{1}{*}{$2$}                                                          & \multirow{1}{*}{$\dfrac{2\sqrt{3}}{3}$}                                   \\
+		\hline
+		\multirow{1}{*}{$67.5\degree$}                  & \multirow{1}{*}{$\dfrac{3\pi}{8}$}  & \multirow{1}{*}{$\dfrac{\sqrt{2+\sqrt{2}}}{2}$}   & \multirow{1}{*}{$\dfrac{\sqrt{2-\sqrt{2}}}{2}$}   & \multirow{1}{*}{$\sqrt{2}+1$}                                                 & \multirow{1}{*}{$\sqrt{2}-1$}                                             & \multirow{1}{*}{$\sqrt{4+2\sqrt{2}}$}                                         & \multirow{1}{*}{$\sqrt{4-2\sqrt{2}}$}                                     \\
+		\hline
+		\multirow{1}{*}{$72\degree$}                    & \multirow{1}{*}{$\dfrac{2\pi}{5}$}  & \multirow{1}{*}{$\dfrac{\sqrt{10+2\sqrt{5}}}{4}$} & \multirow{1}{*}{$\dfrac{\sqrt{5}-1}{4}$}          & \multirow{1}{*}{$\sqrt{5+2\sqrt{5}}$}                                         & \multirow{1}{*}{$\dfrac{\sqrt{25-10\sqrt{5}}}{5}$}                        & \multirow{1}{*}{$\sqrt{5}+1$}                                                 & \multirow{1}{*}{$\dfrac{\sqrt{10+2\sqrt{5}}}{5}$}                         \\
+		\hline
+		\multirow{1}{*}{$75\degree$}                    & \multirow{1}{*}{$\dfrac{5\pi}{12}$} & \multirow{1}{*}{$\dfrac{\sqrt{6}+\sqrt{2}}{4}$}   & \multirow{1}{*}{$\dfrac{\sqrt{6}-\sqrt{2}}{4}$}   & \multirow{1}{*}{$2+\sqrt{3}$}                                                 & \multirow{1}{*}{$2-\sqrt{3}$}                                             & \multirow{1}{*}{$\sqrt{6}+\sqrt{2}$}                                          & \multirow{1}{*}{$\sqrt{6}-\sqrt{2}$}                                      \\
+		\hline
+		\multirow{1}{*}{$90\degree$}                    & \multirow{1}{*}{$\dfrac{\pi}{2}$}   & \multirow{1}{*}{$1$}                              & \multirow{1}{*}{$0$}                              & \multirow{1}{*}{$\displaystyle\lim_{\theta\to\pi/2^\pm}\tan\theta=\mp\infty$} & \multirow{1}{*}{$0$}                                                      & \multirow{1}{*}{$\displaystyle\lim_{\theta\to\pi/2^\pm}\sec\theta=\mp\infty$} & \multirow{1}{*}{$1$}                                                      \\
+		\hline
+	\end{tabular}
+\end{table*}
+\end{document}
